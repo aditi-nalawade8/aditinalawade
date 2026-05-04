@@ -1,0 +1,30 @@
+.divider-section{
+  padding:0px 0;
+}
+
+.divider-line{
+  width:82%;
+  margin:auto;
+  height:1.5px;
+  border-radius:10px;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    #7c6a95,
+    #c4b5fd,
+    #7c6a95,
+    transparent
+  );
+  background-size:200% 100%;
+  animation:moveLine 3s linear infinite;
+}
+
+@keyframes moveLine{
+  0%{
+    background-position:200% 0;
+  }
+
+  100%{
+    background-position:-200% 0;
+  }
+}

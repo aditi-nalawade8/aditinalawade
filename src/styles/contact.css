@@ -1,0 +1,164 @@
+.contact-section{
+  padding:60px 0;
+}
+
+.contact-label{
+  font-size:25px;
+  letter-spacing:2px;
+  color:#7c6a95;
+  font-weight:700;
+  margin-bottom:15px;
+}
+
+.contact-title{
+  font-size:20px;
+  color:#111827;
+  margin-bottom:45px;
+}
+
+.contact-title span{
+  color:#7c6a95;
+}
+
+/* Layout */
+.contact-wrapper{
+  display:grid;
+  grid-template-columns:0.85fr 1.15fr;
+  gap:200px;
+  align-items:start;
+}
+
+/* Left Form */
+.contact-left{
+  background:#f8f6fc;
+  padding:28px;
+  border-radius:24px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.04);
+}
+
+.contact-left form{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.contact-left input,
+.contact-left textarea{
+  width:100%;
+  border:none;
+  outline:none;
+  background:white;
+  padding:16px 18px;
+  border-radius:14px;
+  font-size:15px;
+  color:#111827;
+}
+
+.contact-left textarea{
+  resize:none;
+}
+
+.contact-left button{
+  border:none;
+  background:#111827;
+  color:white;
+  padding:15px;
+  border-radius:30px;
+  font-size:15px;
+  font-weight:700;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.contact-left button:hover{
+  background:#7c6a95;
+}
+
+/* Right Side */
+.contact-right{
+  display:flex;
+  flex-direction:column;
+  gap:0px;
+}
+
+.info-card{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:16px 0;
+}
+
+.icon{
+  width:48px;
+  height:48px;
+  padding:13px;
+  border-radius:50%;
+  background:#7c6a95;
+  color:white;
+  flex-shrink:0;
+}
+
+.info-card h4{
+  font-size:17px;
+  color:#111827;
+  margin-bottom:4px;
+}
+
+.info-card p{
+  color:#6b7280;
+  font-size:14px;
+}
+
+.social-contact{
+  display:flex;
+  gap:12px;
+  margin-top:10px;
+}
+
+.social-contact a{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  background:#111827;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:18px;
+  transition:0.3s;
+}
+
+.social-contact a:hover{
+  background:#7c6a95;
+  transform:translateY(-4px);
+}
+
+/* Mobile */
+@media(max-width:992px){
+
+ .contact-wrapper{
+  display:grid;
+  grid-template-columns:0.9fr 1.1fr;
+  gap:30px;
+  align-items:start;
+}
+
+  .contact-title{
+    font-size:38px;
+  }
+}
+
+@media(max-width:768px){
+
+  .contact-section{
+    padding:75px 0;
+  }
+
+  .contact-title{
+    font-size:30px;
+  }
+
+  .contact-left{
+    padding:22px;
+  }
+}
