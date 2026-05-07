@@ -1,0 +1,171 @@
+.education-section{
+  padding:60px 0;
+}
+
+.education-label{
+  font-size:25px;
+  letter-spacing:2px;
+  color:#7c6a95;
+  font-weight:700;
+  margin-bottom:15px;
+}
+
+.education-title{
+  font-size:20px;
+  color:#111827;
+  margin-bottom:45px;
+}
+
+.education-title span{
+  color:#7c6a95;
+}
+
+/* Timeline */
+.education-timeline{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:28px;
+}
+
+.education-timeline::before{
+  content:"";
+  position:absolute;
+  left:32px;
+  top:0;
+  width:3px;
+  height:100%;
+  background:#e6ddf8;
+}
+
+/* Card */
+.education-card{
+  background:#ffffff;
+  border-radius:24px;
+  padding:28px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.05);
+  display:grid;
+  grid-template-columns:70px 1fr 220px;
+  gap:22px;
+  align-items:center;
+  transition:0.3s;
+  position:relative;
+}
+
+.education-card:hover{
+  transform:translateY(-6px);
+}
+
+/* Icon */
+.edu-icon{
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#7c6a95,#9f7aea);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:25px;
+  z-index:2;
+}
+
+/* Left */
+.edu-left h3{
+  font-size:25px;
+  color:#111827;
+  margin-bottom:8px;
+}
+
+.edu-left h4{
+  font-size:17px;
+  color:#7c6a95;
+  margin-bottom:8px;
+}
+
+.edu-college{
+  color:#374151;
+  line-height:1.6;
+  margin-bottom:5px;
+}
+
+.edu-board{
+  color:#6b7280;
+  font-size:15px;
+}
+
+/* Right */
+.edu-right{
+  text-align:right;
+}
+
+.edu-year{
+  font-size:17px;
+  font-weight:700;
+  color:#111827;
+  margin-bottom:10px;
+}
+
+.edu-score{
+  font-size:16px;
+  color:#7c6a95;
+  font-weight:700;
+}
+
+/* Tablet */
+@media(max-width:992px){
+
+  .education-card{
+    grid-template-columns:70px 1fr;
+  }
+
+  .edu-right{
+    grid-column:2/3;
+    text-align:left;
+    margin-top:10px;
+  }
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+  .education-section{
+    padding:55px 0;
+  }
+
+  .education-label,
+  .education-title{
+    text-align:center;
+  }
+
+  .education-title{
+    font-size:28px;
+  }
+
+  .education-timeline::before{
+    display:none;
+  }
+
+  .education-card{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:22px;
+  }
+
+  .edu-icon{
+    margin:auto;
+  }
+
+  .edu-right{
+    text-align:center;
+    margin-top:0;
+  }
+
+  .edu-left h3{
+    font-size:21px;
+  }
+
+  .edu-left h4{
+    font-size:15px;
+  }
+}
